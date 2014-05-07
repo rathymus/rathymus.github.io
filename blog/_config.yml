@@ -1,3 +1,4 @@
-name: Doctor Kl's Programminarium
+name: PROGRAMMINARIUM
 markdown: redcarpet
 pygments: true
+safe: true
