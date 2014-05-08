@@ -1,0 +1,26 @@
+---
+layout: default
+title: Programminarium
+tags:
+- todo
+- asd
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+	{% for post in site.posts %}
+	{% unless post.categories contains 'special' %}
+	<li>
+	  
+	  <article>
+		<time>{{ post.date | date_to_string }}</time> &raquo;
+	  <a href="{{ post.url }}">{{ post.title }}</a>
+		  {{ post.excerpt }}
+	  </article>
+	</li>
+	{% endunless %}
+	{% endfor %}
+  </ul>
+</div>
+

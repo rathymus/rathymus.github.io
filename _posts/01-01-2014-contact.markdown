@@ -1,0 +1,43 @@
+---
+layout: post
+title: Contact
+category: special
+---
+
+You can find me at <div class="myemail">`a.klinakis`</div>
+
+You'll notice you can't select the email address, I'm afraid you'll have to type
+it in. That's because I'd like to guard myself from email harvesters. Look at
+the bright side though: Others use images instead! At least you can copy the
+'difficult' part :)
+
+{%comment%}
+
+[Scroll down](#how) to see how I did it
+
+
+
+## PGP Key
+
+_Coming soon!_
+
+## How I Did It <a name="how"></a>
+
+By using the `:after` pseudoclass. Full code:
+
+{% highlight css %}
+
+.myemail{
+	font-family: monospace;
+	font-size: 1.3em;
+}
+
+.myemail:after{
+	content: "@yahoo.com";
+}
+{% endhighlight %}
+
+To use it I wrapped my address in a div, like so:
+`<div class="myemail">a.klinakis</div>`. And there you go.
+
+{%endcomment%}

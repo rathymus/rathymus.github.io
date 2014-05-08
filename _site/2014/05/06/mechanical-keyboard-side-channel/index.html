@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Acoustic Side-Channel on Mechanical Keyboards</title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic&subset=latin,greek-ext"
+		  rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700"
+		  rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+
+	<div class="site">
+	  <header>
+		<div class="title"><a href="/">PROGRAMMINARIUM</a></div>
+		<ul>
+		  <li><a class="extra" href="/">Home</a></li>	&bull;
+		  <li><a class="extra" href="/special/2014/01/01/contact">Contact</a> </li>&bull;
+		  <li><a class="extra" href="/special/2014/01/01/projects">Projects</a> </li>
+		  <!-- <li><a class="extra" href="/">Archive</a> </li> -->
+		</ul>
+	  </header>
+
+	  <section>
+  <header>
+	<h1>Acoustic Side-Channel on Mechanical Keyboards</h1>
+	
+
+	<span class="meta">06 May 2014</span>
+	
+  </header>
+
+  <article>
+	<p>All mechanical devices leave traces when used. Keyboards are no exception.
+I recently started reading Pete Wright&#39;s <em>Spy Catcher</em> in which he describes
+(among other things) the various methods he used against foreign
+(ie. non-British) intelligence agencies.</p>
+
+<p>It occured to me that it should be possible, provided a decent sound recording,
+to figure out which keys have been pressed in a typing session. Below you&#39;ll
+find my recording of typing this very text, with back-spaces, arrow-key usage,
+and all the things we do when we type.</p>
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148228406&amp;color=ff0707&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false">
+</iframe>
+
+<p>It should be possible to attack this recording and reconstruct this text. The
+parameters one should keep in mind are</p>
+
+<ul>
+<li>The keyboard&#39;s profile</li>
+<li>The typist&#39;s hand</li>
+</ul>
+
+<p>The profile is the unique sound made by a certain key on a certain keyboard.
+The hand is the user&#39;s typing profile, including things like quick two-key
+presses, changes in key sound due to key depression force and stuff like that.</p>
+
+<p>End recording.</p>
+
+<hr>
+
+<p>A few hints: My emacs inserts a space after every comma automatically and I&#39;m not
+really used to it yet, so after every <em>comma</em> there&#39;s a <em>space</em> and a
+<em>backspace</em> sound.</p>
+
+<p>I grew up in the digital era where signals are high and low. Working with sound
+always terrified me because the signal is analog. I guess it&#39;s time to change
+that.</p>
+
+<p>It turns out my phone was more than capable of recording all the small details
+that make the attack possible. I exported it to <code>.WAV</code> from its native <code>.3ga</code>
+which is probably overkill; I should be able to work with an <code>.mp3</code> as well.
+After all Wright had much less sensitive microphones and managed to figure out
+the starting positions of cipher machines, among other things. I haven&#39;t
+finished the book but I wonder why he didn&#39;t try to run this attack on recordings
+of typewriters.</p>
+
+<p>This is what the first 18 seconds look like in Audacity:</p>
+
+<p><img src="/assets/keyb_18.png" alt="18 seconds of typing"></p>
+
+<p>Minute imperfections during keyswitch construction shouldn&#39;t make much difference
+on the sound produced by each key. Wear sustained during normal use should though
+and the effect should be amplified in older keyboards.</p>
+
+  </article>
+</section>
+
+
+
+<section class="tagem">
+  
+  <a href="#" class="tag">keyboard</a>
+  
+  <a href="#" class="tag">side-channel</a>
+  
+  <a href="#" class="tag">todo</a>
+  
+</section>
+<section>
+
+  
+  <h2>Other Items</h2>
+  
+  <p>Next: <a href="/2014/05/07/so-bayes/">Bayesian Analysis on StackOverflow Posts</a></p>
+  
+  
+  <p>Previous: <a href="/2014/05/05/keyboard-illuminate/">Hack a keyboard into backlighting!</a></p>
+  
+
+  
+
+</section>
+
+
+
+	  <footer>
+		<div class="contact">
+		  Tony Klinakis<br />
+		  {Software, Web} Developer<br />
+		  Caffeine Addict<br />
+		</div>
+		<span class="contact">
+		  <div class="myemail">a.klinakis</div>
+		  <a href="https://github.com/rathymus">github.com/rathymus</a><br/>
+		  <a href="https://careers.stackoverflow.com/aklinakis">Curriculum Vitae</a>
+		</span>
+	  </footer>
+	</div>
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+---
+layout: post
+title: Bayesian Analysis on StackOverflow Posts
+tags:
+- bayes
+- spam
+- todo
+---
+
+I read somewhere that someone used Bayesian analysis on Myspace profiles of
+potential dates with some degree of success. Actually I didn't read it, I saw
+it on a [Ted video](http://youtu.be/hqKafI7Amd8). At the time it was election
+season at StackOverflow and all candidates promised to reduce the
+[close queue](http://stackoverflow.com/review), standing at 9K pending issues
+at the time of writing.

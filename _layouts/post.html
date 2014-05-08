@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section>
+  <header>
+	<h1>{{ page.title }}</h1>
+	{% unless page.categories contains 'special' %}
+
+	<span class="meta">{{ page.date | date_to_string }}</span>
+	{% endunless %}
+  </header>
+
+  <article>
+	{{ content }}
+  </article>
+</section>
+
+{% unless page.categories contains 'special' %}
+
+<section class="tagem">
+  {% for tag in page.tags %}
+  <a href="#" class="tag">{{ tag }}</a>
+  {% endfor %}
+</section>
+<section>
+
+  {% unless page.next==nil && page.previous==nil %}
+  <h2>Other Items</h2>
+  {% unless page.next==nil %}
+  <p>Next: <a href="{{page.next.url}}">{{page.next.title}}</a></p>
+  {% endunless %}
+  {% unless page.previous==nil %}
+  <p>Previous: <a href="{{page.previous.url}}">{{page.previous.title}}</a></p>
+  {% endunless %}
+
+  {% endunless %}
+
+</section>
+{% endunless %}

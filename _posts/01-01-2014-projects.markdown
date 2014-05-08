@@ -1,0 +1,11 @@
+---
+title: Projects
+category: special
+layout: post
+---
+
+# Onyx
+
+Ncurses-based text editor written in C++ and Ruby.
+
+[[github](https://github.com/rathymus/onyx)]

@@ -1,0 +1,5 @@
+name: PROGRAMMINARIUM
+markdown: redcarpet
+pygments: true
+safe: true
+permalink: /:categories/:year/:month/:day/:title/
